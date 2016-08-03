@@ -1,0 +1,8 @@
+/target/
+/nbactions.xml
+/derby.log
+/argus.log
+/.settings/
+/.classpath
+/.project
+/orchestra-build.properties
