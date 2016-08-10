@@ -1,7 +1,7 @@
 ArgusOrchestra  [![Build Status](https://travis-ci.org/SalesforceEng/Argus.svg?branch=master)](https://travis-ci.org/salesforce/ArgusOrchestra) [![Coverage](https://codecov.io/github/SalesforceEng/Argus/coverage.svg?branch=master)](https://codecov.io/github/salesforce/ArgusOrchestra?branch=master) [![Static Analysis](https://scan.coverity.com/projects/8155/badge.svg)](https://scan.coverity.com/projects/salesforce-argusorchestra)
 =====
 
-ArgusOrchetra is a command line client used to extract metric and annotation data from Splunk and publish it to Argus.
+ArgusOrchetra is a command line client used to extract metric and annotation data from Splunk and publish it to [Argus](https://github.com/SalesforceEng/Argus).
 
 ## Building ArgusOrchestra
 
@@ -144,7 +144,7 @@ timestamp=time
 ```
 
 ### Sample Annotation Collection Splunk Properties
-The example below uses the same configuration as the annotation (event) collection integration test.  It collects querycount and linecount from the Splunk _audit index for the trailing 30 minutes (in 10 minute buckets) and groups the results by Splunk server.  It's essentially the same as the metric collection, but instead of storing the result as metrics, it stores them as event annotations in Argus.  The annotations are stored with type *opsdata*, scope name of *_audit*, an event ID field that corresponds to the Splunk server, and a metric named called *querycounts*.  The two event fields stored on the event are derived from the *metric.<%s>* parameters that are specified.
+The example below uses the same configuration as the annotation (event) collection integration test.  It collects querycount and linecount from the Splunk _audit index for the trailing 30 minutes (in 10 minute buckets) and groups the results by Splunk server.  It's essentially the same as the metric collection, but instead of storing the result as metrics, it stores them as event annotations in Argus.  The annotations are stored with type *opsdata*, scope name of *_audit*, an event ID field that corresponds to the Splunk server, and a metric named *querycounts*.  The two event fields stored on the event are derived from the *metric.<%s>* parameters that are specified.
 
 ```
 host=splunk.mycompany.com
