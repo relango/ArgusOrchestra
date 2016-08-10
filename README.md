@@ -1,4 +1,4 @@
-ArgusOrchestra [![Build Status](https://travis-ci.org/salesforce/ArgusOrchestra.svg?branch=master)](https://travis-ci.org/salesforce/ArgusOrchestra) [![Coverage](https://codecov.io/github/SalesforceEng/Argus/coverage.svg?branch=master)](https://codecov.io/github/salesforce/ArgusOrchestra?branch=master) [![Static Analysis](https://scan.coverity.com/projects/8155/badge.svg)](https://scan.coverity.com/projects/salesforce-argusorchestra)
+ArgusOrchestra [![Build Status](https://travis-ci.org/salesforce/ArgusOrchestra.svg?branch=master)](https://travis-ci.org/salesforce/ArgusOrchestra) [![Coverage](https://codecov.io/gh/salesforce/ArgusOrchestra/branch/master/graph/badge.svg)](https://codecov.io/gh/salesforce/ArgusOrchestra) [![Static Analysis](https://scan.coverity.com/projects/8155/badge.svg)](https://scan.coverity.com/projects/salesforce-argusorchestra)
 =====
 
 ArgusOrchetra is a command line client used to extract metric and annotation data from Splunk and publish it to [Argus](https://github.com/SalesforceEng/Argus).
