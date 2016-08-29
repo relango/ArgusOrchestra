@@ -225,6 +225,7 @@ public class ArgusHttpClient {
             if (!preview) {
                 response = executeHttpRequest(RequestType.POST, requestUrl, new StringEntity(json));
                 EntityUtils.consume(response.getEntity());
+                System.out.println(json);
             } else {
                 System.out.println(json);
             }

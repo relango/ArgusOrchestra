@@ -110,7 +110,10 @@ public class SplunkWorker<T> implements Callable<Boolean> {
         try {
             resultSet = service.querySplunkForEvents(query, Arrays.toString(queryParams.toArray(new String[queryParams.size()])));
             results.addAll(parser.parse(resultSet, queryParams));
-        } finally {
+        } catch (Exception e){
+            LOGGER.error("Exception in parsing" ,e );
+        }
+        finally {
             if (resultSet != null) {
                 try {
                     resultSet.close();
